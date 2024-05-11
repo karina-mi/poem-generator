@@ -28,15 +28,24 @@ main {
 
 }
 
-form {
-    padding: 30px;
+.form-container {
     background-color: white;
-    box-shadow: 0 20px 60px rgb(66, 50, 100, 0.08);
-    border-radius: 10px;
-    display: flex;
     margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgb(66, 50, 100, 0.08);
+    padding: 30px;
 }
 
+form {
+    display: flex;
+}
+
+.hint {
+    line-height: 1.5;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.6;
+}
 .instructions {
     padding: 16px;
     border: 1px solid rgb(39, 33, 66, 0.5);
@@ -68,8 +77,26 @@ form {
 
 }
 
+.hidden {
+    display: none;
+}
+
+.poem strong {
+    font-size: 25px;
+}
+
 footer {
     text-align: center;
     font-size: 13px;
     margin-top: 30px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink 1s step-start 0s infinite;
 }
