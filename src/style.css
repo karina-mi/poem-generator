@@ -1,6 +1,13 @@
 body {
-    background-color: #f9f7fe;
-    font-family: Apple Braille, sans-serif;
+    background:
+            radial-gradient(#9c0f89 3px, transparent 4px),
+            radial-gradient(#ffffff 3px, transparent 4px),
+            linear-gradient(#fff 4px, transparent 0),
+            linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+            linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+            #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 a {
@@ -20,7 +27,12 @@ h1 {
     font-weight: 800;
     font-size: 36px;
     line-height: 1.5;
-    color: #272044;
+    color: #000000;
+    background: #9c0f8952;
+    opacity: 0.7;
+    border-radius: 7px;
+    max-width: 49%;
+    padding: 0 5px;
 
 }
 
@@ -32,7 +44,7 @@ main {
     background-color: white;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 20px 60px rgb(66, 50, 100, 0.08);
+    box-shadow: 2px 0px 17px 0px rgb(0 0 0);;
     padding: 30px;
 }
 
@@ -67,6 +79,10 @@ form {
     padding: 14px 24px;
 }
 
+.submit-button:hover {
+    cursor: pointer;
+    background: #c910b0;
+}
 .poem {
     font-size: 14px;
     background-color: white;
